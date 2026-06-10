@@ -1,0 +1,136 @@
+{
+  "info": {
+    "_postman_id": "6453e189-a33d-4bf6-88e1-9029b80b96d4",
+    "name": "APIFunctionsAzure",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53858813",
+    "_collection_link": "https://go.postman.co/collection/53858813-6453e189-a33d-4bf6-88e1-9029b80b96d4?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Api Functions Azure",
+      "item": [
+        {
+          "name": "POST RegistrarProduto",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Nome\": \"Jaqueta\",\r\n    \"Preco\" : 100.50 \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:7006/api/RegistrarProduto",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "7006",
+              "path": [
+                "api",
+                "RegistrarProduto"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET BuscarProdutos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:7006/api/BuscarProdutos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "7006",
+              "path": [
+                "api",
+                "BuscarProdutos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET BuscarProduto/{id}",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:7006/api/BuscarProduto/E305AFB8-F602-4E3B-EFFF-08DEC72B6062",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "7006",
+              "path": [
+                "api",
+                "BuscarProduto",
+                "E305AFB8-F602-4E3B-EFFF-08DEC72B6062"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PUT AtualizarProduto",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\": \"e305afb8-f602-4e3b-efff-08dec72b6062\",\r\n    \"nome\": \"Jaqueta alterada\",\r\n    \"preco\": 250.36\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:7006/api/AtualizarProduto",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "7006",
+              "path": [
+                "api",
+                "AtualizarProduto"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DELETE ApagarProduto/{id}",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:7006/api/ApagarProduto/E305AFB8-F602-4E3B-EFFF-08DEC72B6062",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "7006",
+              "path": [
+                "api",
+                "ApagarProduto",
+                "E305AFB8-F602-4E3B-EFFF-08DEC72B6062"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
