@@ -1,7 +1,7 @@
 ## ⚙️ Azure-Functions-Api-EF10
 Exemplo de simulação de API com Triggers do Azure Functions e EntityFramework em C# .NET Core 10 com banco de dados SQL-Server.
 
-O que voçê vai ver nesse Projeto
+#### 📋 O que voçê vai ver nesse Projeto
 
 | Tecnologia| Descrição |
 |-----------|-----------|
