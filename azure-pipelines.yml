@@ -15,3 +15,7 @@ steps:
 
 - script: dotnet build
   displayName: 'Buildando o projeto'
+
+- task: FuncToolsInstaller@0
+  inputs:
+    version: 'latest'
