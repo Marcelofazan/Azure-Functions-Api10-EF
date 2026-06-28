@@ -18,12 +18,12 @@ steps:
     command: 'restore'
     projects: '**/ApiFunctionsAzure.csproj'
 
-# 3. Compila o projeto usando script nativo para evitar o erro de sintaxe do MSBuild
+# 3. Compila o projeto com aspas extras protegendo os argumentos
 - script: |
-    dotnet build ./ApiFunctionsAzure/ApiFunctionsAzure.csproj --configuration Release /p:NoWarn="CS8602;CS8618;CS8634"
+    dotnet build ./ApiFunctionsAzure/ApiFunctionsAzure.csproj --configuration Release "/p:NoWarn=\"CS8602;CS8618;CS8634\""
   displayName: 'Buildando o projeto'
 
-# 4. Faz a simulação completa de publicação
+# 4. Publica com aspas extras protegendo os argumentos
 - script: |
-    dotnet publish ./ApiFunctionsAzure/ApiFunctionsAzure.csproj --configuration Release /p:NoWarn="CS8602;CS8618;CS8634" --output ./publish_output
+    dotnet publish ./ApiFunctionsAzure/ApiFunctionsAzure.csproj --configuration Release "/p:NoWarn=\"CS8602;CS8618;CS8634\"" --output ./publish_output
   displayName: 'Validar Integridade dos Endpoints'
